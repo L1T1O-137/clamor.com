@@ -1,0 +1,175 @@
+body{
+    background-color: pink;
+    background: url(img/fundo1clamor.jpg);
+    background-attachment: fixed;
+}
+
+.header-logo{
+    background-image: url(img/wordart1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 230px;
+    height: 130px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: pink;
+    border-bottom: 5px #000000 ;
+    box-shadow: 0px 5px 15px 0px #000000;
+    position: sticky;
+    top: 0;
+}
+.header-nav{
+    color: #ffffff;
+    text-decoration: none;
+}
+.header-nav ul{
+    display: flex;
+    color: #ffee00;
+    gap: 16px;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.header-nav a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 13px;
+    background-color: #ff00b3;
+    font-weight: bold;
+    letter-spacing: 3px;
+    box-shadow: 0px 5px 15px 0px black;
+    font-family: comic sans ms;
+}
+.header-nav a:hover{
+    color: black;
+    background-color:#00e1ff;
+    box-shadow: none;
+}
+
+a.header-nav-active{
+    background-color: #00e1ff;
+    color: #000000;
+    box-shadow: none;
+}
+
+a.header-nav-active:hover{
+     background-color: #ff0000;
+    color: #000000;
+    box-shadow: none;
+    cursor: default;
+    pointer-events: none;
+}
+
+/* FIM DO HEADER E BODY EM COMUM EM TODAS AS PÁGINAS */
+
+article{
+    background-color: rgb(252, 188, 230);
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    width: 1000px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: comic sans ms;
+}
+
+.lista{
+    list-style-type: none;
+    display: flex;
+    margin-right: 45px;
+    margin-left: auto;
+    justify-content: center;
+}
+
+/* SISTEMA RESPONSIVO: */
+
+@media (max-width: 768px) {
+  
+
+  .tituloartigo {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .subtitulo h1 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .container {
+    grid-template-columns: 1fr; /* Fica 1 artigo por linha */
+    gap: 15px;
+    width: 95%;
+  }
+
+  .lista {
+    margin-right: 0;
+    margin-left: 0;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .propaganda {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .propaganda img {
+    width: 90%;
+    height: auto;
+  }
+
+
+
+  header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .header-logo {
+    width: 150px;
+    height: 80px;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 10px;
+  }
+
+  .header-nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .header-nav a {
+    padding: 8px 10px;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+  }
+
+  article {
+    font-size: 0.9rem;
+    padding: 10px;
+    width: 95%;
+  }
+
+  .lista {
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+  }
+  }
